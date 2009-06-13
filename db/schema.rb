@@ -9,6 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20090613203344) do
+
+  create_table "pomodoros", :force => true do |t|
+    t.string   "description"
+    t.integer  "user_id"
+    t.datetime "timestamp"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
