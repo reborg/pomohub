@@ -15,3 +15,6 @@ config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
+
+config.gem 'notahat-machinist', :version => ">= 0.3.1", :source => "http://gems.github.com", :lib => "machinist"
+config.gem "faker"
