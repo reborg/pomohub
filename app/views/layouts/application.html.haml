@@ -1,0 +1,14 @@
+!!!
+%html{ :lang => "en" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title
+      Pomohub
+    %link{ :href => "stylesheets/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    %link{ :href => "stylesheets/print.css", :rel => "stylesheet", :type => "text/css", :media => "print" }
+
+  %body#index.blueprint
+    .container
+      = render :partial => "layouts/header"
+      = yield
+      = render :partial => "layouts/footer"
