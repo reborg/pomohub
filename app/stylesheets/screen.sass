@@ -1,8 +1,30 @@
-@import blueprint.sass
+@import blueprint/screen.sass
 @import blueprint/modules/scaffolding.sass
 @import compass/reset.sass
+@import compass/utilities.sass
+ 
++blueprint-typography("body.blueprint")
+ 
+body.blueprint
+  +blueprint-scaffolding
+  .container
+    +container
 
-+blueprint
-// Remove the scaffolding when you're ready to start doing visual design.
-// Or leave it in if you're happy with how blueprint looks out-of-the-box
-+blueprint-scaffolding
+body#index
+  #header
+    +column(24)
+    h1
+      :float left
+    #site-actions
+      :float right
+      +horizontal-list
+  #navigation
+    +column(5)
+  #main-content
+    +column(19,true)
+  #footer
+    +column(24)
+    #legalese
+      +column(20)
+    #footer-links
+      +column(4,true)

@@ -11,4 +11,7 @@ class PomodorosController < ApplicationController
     end
   end
 
+  def index
+  end
+
 end

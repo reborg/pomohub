@@ -9,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
 
   map.resources :pomodoros
+  map.root :controller => "pomodoros"
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 
