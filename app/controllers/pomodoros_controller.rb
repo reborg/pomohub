@@ -1,4 +1,6 @@
 class PomodorosController < ApplicationController
+  
+  before_filter :login_required
 
   def create
     @pomodoro = Pomodoro.new(params[:pomodoro])
