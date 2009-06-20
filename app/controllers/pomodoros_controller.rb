@@ -12,6 +12,7 @@ class PomodorosController < ApplicationController
   end
 
   def index
+    @users = User.all
   end
 
 end

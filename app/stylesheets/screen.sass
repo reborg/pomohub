@@ -12,18 +12,26 @@ body.blueprint
 
 body#index
   #header
-    +column(24)
+    +column(18)
     h1
       :float left
     #site-actions
       :float right
       +horizontal-list
   #navigation
-    +column(5)
+    :float left
+    +horizontal-list
+    :text-align left
   #main-content
-    +column(19,true)
+    +column(18)
+    #users
+      +column(9)
+      :margin 10px 10px 20px 20px
+      #user
+        :background-color lightGrey
+        :margin-bottom 5px
   #footer
-    +column(24)
+    +column(18)
     #legalese
       +column(20)
     #footer-links
