@@ -4,7 +4,6 @@ class CreatePomodoros < ActiveRecord::Migration
       t.string :description
       t.integer :user_id
       t.datetime :timestamp
-
       t.timestamps
     end
   end

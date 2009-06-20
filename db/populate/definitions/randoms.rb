@@ -5,7 +5,7 @@ Sham.define do
     rand((range.last+1) - range.first) + range.first
   end
   
-  a_random_from_zero_to_3(:unique => false) do
+  a_random_from_0_to_3(:unique => false) do
     range = (0..3)
     rand((range.last+1) - range.first) + range.first
   end
@@ -22,6 +22,11 @@ Sham.define do
   
   a_random_from_1_to_10(:unique => false) do
     range = (1..10)
+    rand((range.last+1) - range.first) + range.first
+  end
+  
+  a_random_from_10_to_100(:unique => false) do
+    range = (10..100)
     rand((range.last+1) - range.first) + range.first
   end
   
