@@ -14,7 +14,7 @@ class PomodorosController < ApplicationController
   end
 
   def index
-    @pomodoro_count_by_user_list = Pomodoro.count(:group => "users.login", :joins => "LEFT JOIN users on pomodoros.user_id = users.id").invert.sort.reverse
+    @pomodoro_count_by_user_list = PomodoroCountByUser.find_all
   end
 
 end
