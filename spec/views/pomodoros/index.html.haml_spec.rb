@@ -7,8 +7,8 @@ describe "/pomodoros/index" do
     render
   end
 
-  it 'shows all users' do
-    response.should have_tag('div#user', 3)
+  it 'shows all users pomodoro counts' do
+    response.should have_tag('div.graph', 3)
   end
   
 end
