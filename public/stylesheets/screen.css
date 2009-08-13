@@ -379,27 +379,31 @@ body#index #main-content {
     body#index #main-content #users #user {
       margin-bottom: 5px; }
   /* line 35, ../../app/stylesheets/screen.sass */
-  body#index #main-content .graph {
-    position: relative;
-    width: 200px;
-    border: 1px solid #DB0B00;
-    padding: 2px;
-    margin-bottom: .5em; }
-    /* line 42, ../../app/stylesheets/screen.sass */
-    body#index #main-content .graph .bar {
-      display: block;
+  body#index #main-content #chart {
+    margin-left: 150px; }
+    /* line 37, ../../app/stylesheets/screen.sass */
+    body#index #main-content #chart .graph {
       position: relative;
-      background: #DB0B00;
-      text-align: center;
-      color: #333;
-      height: 2em;
-      line-height: 2em; }
-      /* line 51, ../../app/stylesheets/screen.sass */
-      body#index #main-content .graph .bar span {
-        position: absolute;
-        left: 1em;
-        color: #FFFFFF; }
-/* line 55, ../../app/stylesheets/screen.sass */
+      width: 400px;
+      border: 1px solid #DB0B00;
+      padding: 2px;
+      margin-bottom: .5em;
+      background-color: lightGrey; }
+      /* line 45, ../../app/stylesheets/screen.sass */
+      body#index #main-content #chart .graph .bar {
+        display: block;
+        position: relative;
+        background: #DB0B00;
+        text-align: center;
+        color: #333;
+        height: 2em;
+        line-height: 2em; }
+        /* line 54, ../../app/stylesheets/screen.sass */
+        body#index #main-content #chart .graph .bar span {
+          position: absolute;
+          left: 1em;
+          color: #81E172; }
+/* line 58, ../../app/stylesheets/screen.sass */
 body#index #footer {
   display: inline;
   float: left;
@@ -409,7 +413,7 @@ body#index #footer {
   /* line 97, ../../vendor/gems/chriseppstein-compass-0.6.15/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
   * html body#index #footer {
     overflow-x: hidden; }
-  /* line 58, ../../app/stylesheets/screen.sass */
+  /* line 61, ../../app/stylesheets/screen.sass */
   body#index #footer #legalese {
     display: inline;
     float: left;
@@ -418,7 +422,7 @@ body#index #footer {
     /* line 97, ../../vendor/gems/chriseppstein-compass-0.6.15/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
     * html body#index #footer #legalese {
       overflow-x: hidden; }
-  /* line 60, ../../app/stylesheets/screen.sass */
+  /* line 63, ../../app/stylesheets/screen.sass */
   body#index #footer #footer-links {
     display: inline;
     float: left;

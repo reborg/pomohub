@@ -14,7 +14,7 @@ class PomodorosController < ApplicationController
   end
 
   def index
-    @pomodoro_count_by_user_list = PomodoroCountByUser.find_all
+    @pomodoro_count_by_user_list = PomodoroCountByUser.find_all_normalized_to(100)
   end
 
 end

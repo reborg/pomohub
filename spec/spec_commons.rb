@@ -1,9 +1,9 @@
 module SpecCommons
 
   def common_pomodoro_count_list
-    [PomodoroCountByUser.new([99, 'Carmelo']),
-     PomodoroCountByUser.new([55, 'Donatella']),
-     PomodoroCountByUser.new([33, 'Norberto'])]
+    [{100 => PomodoroCountByUser.new([50, 'Carmelo'])},
+      {50 => PomodoroCountByUser.new([25, 'Donatella'])},
+      {20 => PomodoroCountByUser.new([10, 'Norberto'])}]
   end
 
 end

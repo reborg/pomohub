@@ -1,2 +1,3 @@
 #main-content
-  = horizontal_bar_graph  [*@pomodoro_count_by_user_list.collect {|pomo| [pomo.name, pomo.count]}]
+  #chart
+    = horizontal_bar_graph  [*@pomodoro_count_by_user_list.collect {|pomo| [pomo.values[0].name, pomo.values[0].count, pomo.keys[0]]}]

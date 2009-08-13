@@ -244,9 +244,10 @@ module CssGraphs
   
   # Make a horizontal graph that only shows percentages.
   #
-  # The label will be set as the title of the bar element.
+  # The label will be set as the title of the bar element. The first number is the number to display
+  # while the second number is the percentage % width to give at the horizolntal bar.
   #
-  #  horizontal_bar_graph [["Stout", 10], ["IPA", 80], ["Pale Ale", 50], ["Milkshake", 30]]
+  #  horizontal_bar_graph [["Stout", 10, 30], ["IPA", 80, 100], ["Pale Ale", 50, 65], ["Milkshake", 30, 40]]
   # 
   # NOTE: Updated to take an array instead of forcing you to use *array.
   # NOTE: Does not normalize data yet...TODO
@@ -257,7 +258,7 @@ module CssGraphs
     data.each do |d|
       html += <<-"HTML"
         <div class="graph">
-          <strong class="bar" style="width: #{d[1]}%;" title="#{d[0].to_s.humanize}"><span>#{d[1]}</span> </strong>
+          <strong class="bar" style="width: #{d[2]}%;" title="#{d[0].to_s.humanize}"><span>#{d[1]}</span> </strong>
         </div>
       HTML
     end

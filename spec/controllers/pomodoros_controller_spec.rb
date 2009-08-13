@@ -9,7 +9,7 @@ describe PomodorosController do
   end
 
   it 'assigns the user collection' do
-    PomodoroCountByUser.stub!(:find_all).and_return(common_pomodoro_count_list)
+    PomodoroCountByUser.stub!(:find_all_normalized_to).and_return(common_pomodoro_count_list)
     get :index
     assigns[:pomodoro_count_by_user_list].size.should == 3
   end
